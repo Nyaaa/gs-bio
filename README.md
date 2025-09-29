@@ -1,2 +1,2 @@
 # gs-bio
-Интеграция сенсоров GS Bio для Home Assistant
+Интеграция сенсоров GS Bio от GS-House для Home Assistant
