@@ -1,12 +1,11 @@
 {
   "domain": "gs_bio",
   "name": "GS Bio",
-  "version": "0.1.0",
-  "documentation": "https://github.com/Nyaaa/gs-bio",
-  "issue_tracker": "https://github.com/Nyaaa/gs-bio/issues",
-  "dependencies": [],
   "codeowners": ["@Nyaaa"],
-  "requirements": [],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Nyaaa/gs-bio",
   "iot_class": "cloud_polling",
-  "config_flow": true
+  "requirements": [],
+  "version": "0.1.0"
 }
