@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Настройка GS Bio",
+        "description": "Введите ключ доступа к API GS-House (из личного кабинета).",
+        "data": {
+          "api_key": "Ключ API"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Не удалось подключиться к API GS-House",
+      "invalid_auth": "Неверный ключ API",
+      "unknown": "Непредвиденная ошибка"
+    },
+    "abort": {
+      "already_configured": "Этот септик / ключ API уже настроен"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Параметры GS Bio",
+        "description": "Обновите ключ доступа к API GS-House.",
+        "data": {
+          "api_key": "Ключ API"
+        }
+      }
+    }
+  }
+}

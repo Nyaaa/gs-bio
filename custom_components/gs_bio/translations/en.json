@@ -1,0 +1,32 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "GS Bio Setup",
+        "description": "Enter your GS-House API key.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Failed to connect to GS-House API",
+      "invalid_auth": "Invalid API key",
+      "unknown": "Unexpected error"
+    },
+    "abort": {
+      "already_configured": "This device / API key is already configured"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "GS Bio Options",
+        "description": "Update your GS-House API key.",
+        "data": {
+          "api_key": "API Key"
+        }
+      }
+    }
+  }
+}
