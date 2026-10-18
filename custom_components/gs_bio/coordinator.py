@@ -40,7 +40,7 @@ class GSAPICoordinator(DataUpdateCoordinator):
         """Fetch data from the API."""
         try:
             data = await self.async_get_data()
-            if data is None:
+            if not data:
                 raise UpdateFailed("Failed to fetch data from API")
             return data
         except UpdateFailed:
@@ -56,7 +56,7 @@ class GSAPICoordinator(DataUpdateCoordinator):
                 _LOGGER.debug("Calling API...")
                 async with session.get(self._api_url) as response:
                     if response.status == 200:
-                        return await response.json()
+                        return await response.json(content_type=None)
                     _LOGGER.error("API request failed with status %s", response.status)
                     return None
         except (TimeoutError, asyncio.TimeoutError):
